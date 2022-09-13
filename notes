@@ -1,0 +1,2 @@
+1. git init -> this means git will initialize/create LOCAL repository in your project directory
+2. git add . -> mark ALL files with a label which means that files are eligible to send to repository.
