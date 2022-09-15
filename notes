@@ -1,2 +1,9 @@
 1. git init -> this means git will initialize/create LOCAL repository in your project directory
 2. git add . -> mark ALL files with a label which means that files are eligible to send to repository.
+3. git status  -> shows how manu files are indexed/marked to be eligible for sending.
+4. git commit -m "my first code changes" -> creates a commit with your files.
+5. git log -> shows the history of your commits
+6. git config --global user.email "sabine.kuprovska@gmail.com"
+7. git config --global user.name "sabinekk"
+
+
