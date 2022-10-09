@@ -23,13 +23,11 @@ public class ShapeCalculatorMain {
                 System.out.println("You have entered number bigger than 10!");
             } else if (userWidth < 0) {
                 System.out.println("Input cannot be negative!");
-            }else if (userLength < 0 && userLength < 10 && userWidth <0 && userWidth <10){
+            }else if (isInputValid(userLength, userWidth)){
                 System.out.println("The area of rectangle is "+ shapeCalculator.areaOfRectangle(userLength, userWidth));
             } else {
                 System.out.println("Calculations cannot be made!");
             }
-
-
 
 
         } else if (userOption == 2) {
@@ -56,5 +54,9 @@ public class ShapeCalculatorMain {
         }
 
 
+    }
+
+    private static boolean isInputValid(double userLength, double userWidth) {
+        return userLength > 0 && userLength < 10 && userWidth > 0 && userWidth < 10;
     }
 }
